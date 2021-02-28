@@ -25,7 +25,10 @@ xhr.onreadystatechange = function () {
             let publishedAt=document.createElement("p");
             publishedAt = data.articles[i].publishedAt;
             document.getElementById("newsPublishedAt").innerHTML= publishedAt;
-            document.getElementById("newsImage").src = data.articles[i].urlToImage;
+
+            let image = document.createElement('img');
+            image=data.articles[i].urlToImage
+            document.getElementById("newsImage").src = image;
         }
     }
 
