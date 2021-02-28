@@ -1,0 +1,54 @@
+html {
+    background: url(asdasd.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+.navbar{
+    background-color: black;
+    width: 100%;
+}
+.nav-link{
+    color: aquamarine;
+}
+.nav-item{
+    background-color: darkslategray;
+}
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-container > div {
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.flex-item-left{
+    word-break: break-all;
+}
+
+@media (min-width: 1000px) {
+    .flex-container {
+        flex-direction: row;
+    }
+}
+#flexGamesDiv{
+    width: 10%;
+}
+#flexPostsDiv{
+    width: 60%;
+
+}
+#flexNewsDiv{
+    width: 30%;
+
+}
+.newsData{
+    font-size:15px;line-height:20px;
+}
