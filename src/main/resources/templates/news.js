@@ -20,6 +20,7 @@ xhr.onreadystatechange = function () {
             let source=document.createElement("p");
             source.innerHTML = data.articles[i].source.name;
             source.setAttribute('class','newsData');
+            source.style.fontFamily = "Chalkduster, fantasy";
 
             let publishedAt=document.createElement("p");
             publishedAt.innerHTML = data.articles[i].publishedAt;

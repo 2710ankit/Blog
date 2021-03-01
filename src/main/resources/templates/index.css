@@ -1,14 +1,12 @@
 html {
-    background-color: darkslategray;
+    background-color: #1d4f40;
 }
 .navbar{
     background-color: black;
     width: 100%;
 }
-.nav-link{
-    color: aquamarine;
-}
-.nav-item{
+
+.navbarBackground{
     background-color: darkslategray;
 }
 * {
@@ -19,15 +17,13 @@ html {
     align-items: stretch;
     display: flex;
     flex-direction: column;
-    font-size: 30px;
-    text-align: center;
+
 }
 
 .flex-container > div {
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
 }
+
 .flex-item-left{
     word-break: break-all;
 }
@@ -37,11 +33,9 @@ html {
         flex-direction: row;
     }
 }
-#flexGamesDiv{
-    width: 10%;
-}
+
 #flexPostsDiv{
-    width: 60%;
+    width: 69%;
 
 }
 #flexNewsDiv{
