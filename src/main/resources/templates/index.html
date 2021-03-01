@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css" />
+    <script src="news.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<script src="news.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <body>
 
 <nav class="navbar navbar-expand-sm">
@@ -35,8 +36,8 @@
 </nav>
 
 
-<div class="flex-container">
-    <div class="flex-item-left" id="flexGamesDiv">
+<div class="flex-container" style="background-color: darkslategray">
+    <div class="flex-item-left" id="flexGamesDiv" >
         <h1>Games</h1>
 
     </div>
@@ -45,15 +46,33 @@
         asdad
 
     </div>
-    <div class="flex-item-left" id="flexNewsDiv">
+    <div class="flex-item-left" id="flexNewsDiv" >
         <h1>News</h1>
-
-        <h3 id="newsHeading" style="font-family: 'Comic Sans MS'">Volvo Does Its 1st OTA Update. Why So Late?</h3>
-        <img  id="newsImage" alt="image" style="height: 200px;width: 300px;object-fit: cover;"><br>
         <br>
-        <p id="newsContent" class="newsData"></p>
-        <p id="newsSource" class="newsData"></p>
-        <p id="newsPublishedAt" class="newsData"></p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color: mintcream">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+
+
+
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" id="corouselInner" >
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
 
     </div>
 </div>
